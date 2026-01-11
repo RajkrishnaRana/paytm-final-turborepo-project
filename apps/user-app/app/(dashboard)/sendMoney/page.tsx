@@ -19,7 +19,7 @@ export default function () {
                     <TextInput label={"Amount"} placeholder={"Amount"} onChange={(value) => setAmount(Number(value))} />
 
                     <div className="flex justify-center pt-4">
-                        <Button onClick={async () => await p2pTransfer(number, amount * 100)}>Send Money</Button>
+                        <Button onClick={async () => await p2pTransfer(number, Number(amount) * 100)}>Send Money</Button>
                     </div>
                 </Card>
             </Center>
